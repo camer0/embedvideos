@@ -3,7 +3,7 @@ var url = new URL(url_string);
 var c = url.searchParams.get("url");
 
  var link=document.createElement('meta');
- link.name="og:video";
+ link.setAttribute("property", "og:video")
  link.content=c;
  document.getElementsByTagName('head')[0].appendChild(link);
 
