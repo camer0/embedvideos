@@ -1,2 +1,4 @@
-var urlParams = new URLSearchParams(window.location.search);
-if (urlParams.has('url')) console.log(urlParams.get('url'))
+var url_string = window.location.href
+var url = new URL(url_string);
+var c = url.searchParams.get("url");
+console.log(c, /PARAM/);
