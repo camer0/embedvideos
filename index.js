@@ -1,1 +1,3 @@
-document.getElementById("content").innerText = "yeet"
+let h = document.createElement("div")
+h.innerText = "yeet"
+document.documentElement.appendChild(h)
