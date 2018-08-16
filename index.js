@@ -1,1 +1,1 @@
-document.write("yeet")
+document.getElementById("content").innerText = "yeet"
