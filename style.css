@@ -1,5 +1,7 @@
 section {
-    display: block;
+    display: inline-block;
+    background-color: red;
+    color: white;
 }
 
 section.field.field-name-field-tags {
@@ -9,9 +11,4 @@ section.field.field-name-field-tags {
 
 section.nodes .article h1 {
     font-size: 1.5em;
-}
-
-.sidebar #block-iit-display-hours-hours {
-    border: none;
-    background: #ff9900;
 }
