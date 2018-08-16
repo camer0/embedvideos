@@ -5,7 +5,7 @@ let url = 'https://library.iit.edu/hours'
 var el = document.createElement('html');
 Snekfetch.get("https://library.iit.edu/hours").then((r) => {
   el.innerHTML = r.body
-  let text = document.createElement("div")
-  text.innerText = el.getElementsByClassName("clear")[0].children[0].innerText
+  let text = document.createElement("section")
+  text.innerHTML = el.getElementById("block-iit-display-hours-hours").innerHTML
   document.documentElement.appendChild(text)
 })
