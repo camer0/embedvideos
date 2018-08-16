@@ -6,6 +6,6 @@ var el = document.createElement('html');
 Snekfetch.get("https://library.iit.edu/hours").then((r) => {
   el.innerHTML = r.body
   let text = document.createElement("section")
-  text.innerHTML = el.getElementById("block-iit-display-hours-hours").innerHTML
+  text.innerHTML = el.getElementsByClassName("block-content content")[1].parentElement.innerHTML
   document.documentElement.appendChild(text)
 })
