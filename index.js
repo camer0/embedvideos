@@ -9,5 +9,5 @@ Snekfetch.get("https://library.iit.edu/hours").then((r) => {
   text.innerHTML = el.getElementsByClassName("block-content content")[1].parentElement.innerHTML
   document.documentElement.appendChild(text)
   console.log('done')
-  //document.getElementsByClassName("page-hide bump-right")[0].innerHTML = ""
+  document.getElementsByClassName("page-hide bump-right")[0].innerHTML = ""
 })
